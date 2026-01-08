@@ -1,0 +1,2 @@
+# SemearMundo
+Projeto da faculdade 
