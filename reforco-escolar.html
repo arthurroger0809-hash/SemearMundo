@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reforço Escolar - Semear o Futuro</title>
+    
+    <!-- Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Estilo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><i class="fa-solid fa-seedling"></i> Semear o Futuro</h1>
+            </div>
+            
+            <button class="menu-toggle" aria-label="Abrir menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i> Início</a></li>
+                    <li><a href="index.html#projetos"><i class="fa-solid fa-arrow-left"></i> Voltar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Específico do Projeto -->
+    <section class="hero" style="background: linear-gradient(rgba(13, 71, 161, 0.9), rgba(46, 125, 50, 0.9)), url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); background-size: cover; background-position: center;">
+        <div class="container hero-content">
+            <h2>Reforço Escolar Solidário</h2>
+            <p>Garantindo que nenhuma criança fique para trás.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div style="display: flex; gap: 40px; flex-wrap: wrap; align-items: center;">
+                <div style="flex: 1; min-width: 300px;">
+                    <img src="https://imperatriznoticias.ufma.br/wp-content/uploads/2022/05/IMG-20220516-WA0013-1-1-1024x768.jpg" alt="Crianças estudando" style="width: 100%; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                    <h2 style="text-align: left; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                        <i class="fa-solid fa-book-open" style="color: var(--primary-color);"></i> Sobre o Projeto
+                    </h2>
+                    <p style="margin-bottom: 15px;">
+                        O <strong>Reforço Escolar Solidário</strong> é focado diretamente no ODS 4 (Educação de Qualidade). Identificamos que muitas crianças da nossa comunidade possuem dificuldades em leitura e matemática básica, o que compromete todo o seu desenvolvimento futuro.
+                    </p>
+                    <p style="margin-bottom: 15px;">
+                        Nossas aulas acontecem no contraturno escolar e são ministradas por professores voluntários e estudantes universitários. O ambiente é acolhedor e focado nas necessidades individuais de cada aluno.
+                    </p>
+                    
+                    <ul style="margin-top: 20px; list-style: none;">
+                        <li style="margin-bottom: 10px;"><i class="fa-solid fa-check" style="color: var(--primary-color);"></i> <strong>Público:</strong> Crianças de 7 a 14 anos.</li>
+                        <li style="margin-bottom: 10px;"><i class="fa-solid fa-check" style="color: var(--primary-color);"></i> <strong>Horários:</strong> Terças e Quintas, 14h às 17h.</li>
+                        <li style="margin-bottom: 10px;"><i class="fa-solid fa-check" style="color: var(--primary-color);"></i> <strong>Local:</strong> Sede da ONG.</li>
+                    </ul>
+
+                    <a href="index.html#contato" class="btn" style="margin-top: 30px;">Quero Inscrever uma Criança</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="ano-atual"></span> Semear o Futuro. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

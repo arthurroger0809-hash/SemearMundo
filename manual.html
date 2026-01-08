@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de Edição - Semear o Futuro</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos específicos para o manual */
+        .manual-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .step {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        .step h3 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        .code-block {
+            background: #f4f4f4;
+            padding: 15px;
+            border-left: 4px solid var(--secondary-color);
+            font-family: monospace;
+            margin: 10px 0;
+            overflow-x: auto;
+        }
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+        .note {
+            background-color: #e3f2fd;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><i class="fa-solid fa-book"></i> Manual do Administrador</h1>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html"><i class="fa-solid fa-arrow-left"></i> Voltar ao Site</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="manual-container">
+        <div class="intro">
+            <h2>Como Atualizar Seu Site</h2>
+            <p>Este guia foi criado para ajudar os responsáveis pela ONG <strong>Semear o Futuro</strong> a realizarem pequenas atualizações no site, como mudar textos, telefones ou fotos, sem precisar de conhecimentos avançados em programação.</p>
+        </div>
+
+        <div class="step">
+            <h3>1. Como abrir os arquivos</h3>
+            <p>Para editar o site, você não precisa de programas caros. Basta usar o <strong>Bloco de Notas</strong> do Windows ou um editor gratuito como o <em>VS Code</em>.</p>
+            <ol>
+                <li>Clique com o botão direito no arquivo <strong>index.html</strong>.</li>
+                <li>Escolha "Abrir com" > "Bloco de Notas".</li>
+                <li>Você verá vários códigos. Não se assuste! Procure pelos textos que estão na cor preta (no bloco de notas) ou branca (nos editores).</li>
+            </ol>
+        </div>
+
+        <div class="step">
+            <h3>2. Alterando Textos</h3>
+            <p>Todo o conteúdo de texto do site está dentro de "tags". Por exemplo, um parágrafo fica dentro de <code>&lt;p&gt;</code> e <code>&lt;/p&gt;</code>.</p>
+            <p>Para mudar a frase de boas-vindas:</p>
+            <div class="code-block">
+                &lt;h2&gt;<span class="highlight">Transformando Vidas Pela Educação</span>&lt;/h2&gt;
+            </div>
+            <p>Apague apenas o texto destacado e escreva o novo. <strong>Não apague os símbolos &lt; e &gt;</strong>.</p>
+        </div>
+
+        <div class="step">
+            <h3>3. Alterando Links (Whatsapp, Facebook)</h3>
+            <p>Os links ficam dentro da tag <code>&lt;a href="..."&gt;</code>. O endereço do link fica dentro das aspas.</p>
+            <div class="code-block">
+                &lt;a href="<span class="highlight">https://facebook.com/ongsemear</span>"&gt;Facebook&lt;/a&gt;
+            </div>
+            <p>Basta trocar o endereço dentro das aspas pelo novo link.</p>
+        </div>
+
+        <div class="step">
+            <h3>4. Atualizando os Números de Impacto</h3>
+            <p>Para atualizar os números da seção "Nosso Impacto", procure por este código no final do arquivo <strong>index.html</strong>:</p>
+            <div class="code-block">
+                &lt;span class="stat-number" data-target="<span class="highlight">150</span>"&gt;0&lt;/span&gt;
+            </div>
+            <p>Mude o número <strong>150</strong> para o novo valor desejado. O site fará a animação automaticamente.</p>
+        </div>
+
+        <div class="step">
+            <h3>5. Trocando Imagens</h3>
+            <p>Para trocar a imagem de fundo ou fotos dos projetos:</p>
+            <ol>
+                <li>Salve a nova foto na pasta do site.</li>
+                <li>No código, procure por <code>&lt;img src="..."&gt;</code> ou no arquivo <strong>style.css</strong> (para o fundo).</li>
+                <li>Substitua o nome do arquivo antigo pelo novo.</li>
+            </ol>
+            <div class="note">
+                <strong>Dica:</strong> Tente usar imagens leves para não deixar o site lento!
+            </div>
+        </div>
+
+        <div class="intro">
+            <p>Precisa de mais ajuda? Entre em contato com o desenvolvedor voluntário ou consulte tutoriais básicos de HTML na internet.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="ano-atual"></span> Semear o Futuro. Material Didático.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

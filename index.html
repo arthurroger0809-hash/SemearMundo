@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semear o Futuro - Educação e Cidadania</title>
+
+    <!-- Fontes do Google (Poppins para títulos, Open Sans para texto) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Ícones (FontAwesome - versão gratuita via CDN) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Nosso estilo -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1><i class="fa-solid fa-seedling"></i> Semear o Futuro</h1>
+        </div>
+
+        <button class="menu-toggle" aria-label="Abrir menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav class="nav-menu">
+          <ul>
+            <li>
+              <a href="#inicio"><i class="fa-solid fa-house"></i> Início</a>
+            </li>
+            <li>
+              <a href="#sobre"><i class="fa-solid fa-users"></i> Sobre</a>
+            </li>
+            <li>
+              <a href="#projetos"
+                ><i class="fa-solid fa-hand-holding-heart"></i> Projetos</a
+              >
+            </li>
+            <li>
+              <a href="#impacto"
+                ><i class="fa-solid fa-chart-line"></i> Resultados</a
+              >
+            </li>
+            <li>
+              <a href="#contato"
+                ><i class="fa-solid fa-envelope"></i> Contato</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="inicio" class="hero">
+      <div class="container hero-content">
+        <h2>Transformando Vidas Pela Educação</h2>
+
+        <p>
+          Juntos reduzimos desigualdades e construímos um futuro com mais
+          oportunidades para nossa comunidade.
+        </p>
+
+        <a href="#projetos" class="btn"
+          ><i class="fa-solid fa-arrow-right"></i> Conheça Nossos Projetos</a
+        >
+      </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="section">
+      <div class="container">
+        <h2><i class="fa-solid fa-circle-info"></i> Quem Somos</h2>
+        <p>
+          A <strong>Semear o Futuro</strong> é uma iniciativa local focada em
+          dois pilares essenciais:
+          <strong>Educação de Qualidade (ODS 4)</strong> e
+          <strong>Redução das Desigualdades (ODS 10)</strong>.
+        </p>
+        <p>
+          Nossa missão é simples: conectar quem quer ajudar com quem precisa de
+          apoio, utilizando a tecnologia e o calor humano para criar pontes de
+          oportunidade em nosso bairro.
+        </p>
+      </div>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projetos" class="section bg-light">
+      <div class="container">
+        <h2><i class="fa-solid fa-layer-group"></i> Nossos Projetos</h2>
+        <div class="cards-grid">
+          <div class="card">
+            <div class="card-icon"><i class="fa-solid fa-book-open"></i></div>
+            <h3>Reforço Escolar</h3>
+            <p>
+              Aulas de apoio em português e matemática para crianças, combatendo
+              a defasagem escolar.
+            </p>
+            <a
+              href="reforco-escolar.html"
+              class="btn"
+              style="margin-top: 15px; font-size: 0.8rem; padding: 8px 20px"
+              >Saiba Mais</a
+            >
+          </div>
+
+          <div class="card">
+            <div class="card-icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <h3>Inclusão Digital</h3>
+            <p>
+              Capacitação em informática básica para jovens e idosos, abrindo
+              portas para o mercado de trabalho.
+            </p>
+            <a
+              href="inclusao-digital.html"
+              class="btn"
+              style="margin-top: 15px; font-size: 0.8rem; padding: 8px 20px"
+              >Saiba Mais</a
+            >
+          </div>
+
+          <div class="card">
+            <div class="card-icon">
+              <i class="fa-solid fa-hands-holding-circle"></i>
+            </div>
+            <h3>Apoio Social</h3>
+            <p>
+              Orientação jurídica e assistencial para famílias, garantindo
+              acesso a direitos fundamentais.
+            </p>
+            <a
+              href="apoio-social.html"
+              class="btn"
+              style="margin-top: 15px; font-size: 0.8rem; padding: 8px 20px"
+              >Saiba Mais</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Impacto e Dados -->
+    <section id="impacto" class="section">
+      <div class="container">
+        <h2><i class="fa-solid fa-chart-simple"></i> Nosso Impacto</h2>
+        <p class="section-subtitle">
+          Resultados alcançados com o apoio da comunidade
+        </p>
+
+        <div class="stats-grid">
+          <div class="stat-item">
+            <span class="stat-number" data-target="7">0</span>
+            <span class="stat-label">Famílias Atendidas</span>
+          </div>
+
+          <div class="stat-item">
+            <span class="stat-number" data-target="8">0</span>
+            <span class="stat-label">Alunos Impactados</span>
+          </div>
+
+          <div class="stat-item">
+            <span class="stat-number" data-target="15">0</span>
+            <span class="stat-label">Voluntários Ativos</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="section section-contato">
+      <div class="container text-center">
+        <h2><i class="fa-solid fa-envelope"></i> Fale Conosco</h2>
+        <p class="section-subtitle">
+          Preencha o formulário abaixo e entraremos em contato o mais breve
+          possível.
+        </p>
+
+        <form id="form-contato" class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nome">Nome Completo</label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                placeholder="Ex: João da Silva"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Ex: joao@email.com"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="assunto">Assunto</label>
+            <select id="assunto" name="assunto" required>
+              <option value="" disabled selected>
+                Selecione o motivo do contato
+              </option>
+              <option value="voluntariado">Quero ser Voluntário</option>
+              <option value="reforco">Inscrição - Reforço Escolar</option>
+              <option value="inclusao">Inscrição - Inclusão Digital</option>
+              <option value="social">Apoio Social</option>
+              <option value="parceria">Parcerias e Doações</option>
+              <option value="duvidas">Dúvidas Gerais</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="mensagem">Mensagem</label>
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              rows="5"
+              placeholder="Escreva sua mensagem aqui..."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-submit">
+            <i class="fa-solid fa-paper-plane"></i> Enviar Mensagem
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- 
+        ==========================================================================
+        RODAPÉ DO SITE
+        ==========================================================================
+    -->
+    <footer>
+      <div class="container">
+        <p>
+          &copy; <span id="ano-atual"></span> Semear o Futuro. Todos os direitos
+          reservados.
+        </p>
+
+        <!-- Link discreto para o Manual de Edição (Apenas para administradores/aprendizado) -->
+        <p style="margin-top: 10px; font-size: 0.8em; opacity: 0.7">
+          <a
+            href="manual.html"
+            target="_blank"
+            title="Clique para aprender a editar este site"
+          >
+            <i class="fa-solid fa-gear"></i> Área do Administrador (Manual de
+            Edição)
+          </a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Link para o nosso arquivo de scripts -->
+    <script src="script.js"></script>
+  </body>
+</html>

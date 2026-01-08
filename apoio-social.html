@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apoio Social - Semear o Futuro</title>
+    
+    <!-- Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Estilo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><i class="fa-solid fa-seedling"></i> Semear o Futuro</h1>
+            </div>
+            
+            <button class="menu-toggle" aria-label="Abrir menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i> Início</a></li>
+                    <li><a href="index.html#projetos"><i class="fa-solid fa-arrow-left"></i> Voltar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Específico do Projeto -->
+    <section class="hero" style="background: linear-gradient(rgba(13, 71, 161, 0.9), rgba(46, 125, 50, 0.9)), url('https://images.unsplash.com/photo-1593113598332-cd288d649433?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); background-size: cover; background-position: center;">
+        <div class="container hero-content">
+            <h2>Apoio Social e à Família</h2>
+            <p>Cuidando de quem cuida da nossa comunidade.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div style="display: flex; gap: 40px; flex-wrap: wrap; align-items: center;">
+                <div style="flex: 1; min-width: 300px;">
+                    <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Mãos dadas em roda" style="width: 100%; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                    <h2 style="text-align: left; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                        <i class="fa-solid fa-hands-holding-circle" style="color: var(--primary-color);"></i> Sobre o Projeto
+                    </h2>
+                    <p style="margin-bottom: 15px;">
+                        Muitas vezes, a barreira para a educação e o trabalho não é a falta de vontade, mas a falta de estrutura básica em casa. O projeto de Apoio Social visa garantir os direitos fundamentais das famílias da região.
+                    </p>
+                    <p style="margin-bottom: 15px;">
+                        Trabalhamos com uma equipe de assistentes sociais e advogados voluntários para oferecer orientação jurídica, acesso a benefícios governamentais e apoio psicológico em momentos de crise.
+                    </p>
+                    
+                    <ul style="margin-top: 20px; list-style: none;">
+                        <li style="margin-bottom: 10px;"><i class="fa-solid fa-check" style="color: var(--primary-color);"></i> <strong>Serviços:</strong> Orientação Jurídica, Encaminhamento ao CRAS, Apoio Psicológico.</li>
+                        <li style="margin-bottom: 10px;"><i class="fa-solid fa-check" style="color: var(--primary-color);"></i> <strong>Atendimento:</strong> Por agendamento ou plantão às quartas-feiras.</li>
+                        <li style="margin-bottom: 10px;"><i class="fa-solid fa-check" style="color: var(--primary-color);"></i> <strong>Custo:</strong> Totalmente gratuito.</li>
+                    </ul>
+
+                    <a href="index.html#contato" class="btn" style="margin-top: 30px;">Solicitar Atendimento</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="ano-atual"></span> Semear o Futuro. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
